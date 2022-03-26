@@ -12,15 +12,18 @@
 <br>
 <br>
 
-<!-- SETUP -->
 <a href="https://awesomewm.org/"><img alt="AwesomeWM Logo" height="160" align = "left" src="https://awesomewm.org/doc/api/images/AUTOGEN_wibox_logo_logo_and_name.svg"></a>
-<b> ~ AwesomeWM dotfiles ~ </b>
+<b>  AwesomeWM Dotfiles  </b>
 
-Welcome to my AwesomeWM Dotfiles! so yeah now i'm using awesomewm, looks like i'll be use this wm forever.
+Welcome to my AwesomeWM configuration files! 
 
-Still quite messy, because i'm still learning Lua. 
+so yeah now i'm using awesomewm, looks like i'll be use this wm forever.
+
+Because only this wm can satisfy me.
 
 Fyi, I use night colorscheme, and it's so beautiful.
+
+These dotfiles are made with love.
 
 <h2></h2><br>
 
@@ -28,14 +31,15 @@ Fyi, I use night colorscheme, and it's so beautiful.
 
 | Programs   | Using             |
 | ---------- | ----------------- |
-| WM         | awesome           |
+| WM         | awesome-git       |
 | OS         | arch linux        |
 | Terminal   | alacritty         |
+| Shell      | zsh               |
 | Editor     | neovim / vscode   |
 | Compositor | picom             |
 | Launcher   | rofi              |
 
-### Here are the instructions you should follow to replicate my AwesomeWM setup.
+<h2></h2><br>
 
 <details open>
 <summary><strong>S E T U P</strong></summary>
@@ -49,9 +53,10 @@ Fyi, I use night colorscheme, and it's so beautiful.
          *Assuming your AUR helper is* `yay`
 
          ```shell
-         yay -S awesome-git picom-jonaburg-fix alacritty rofi todo-bin \
-         acpi acpid acpi_call jq inotify-tools polkit-gnome xdotool xclip maim colord \
-         brightnessctl alsa-utils alsa-tools pulseaudio pulseaudio-alsa playerctl --needed 
+         yay -S awesome-git picom-jonaburg-git alacritty rofi todo-bin acpi acpid \
+         wireless_tools jq inotify-tools polkit-gnome xdotool xclip maim \
+         brightnessctl alsa-utils alsa-tools pulseaudio lm_sensors \
+         mpd mpc mpdris2 ncmpcpp playerctl --needed 
          ```
 
 
@@ -60,7 +65,7 @@ Fyi, I use night colorscheme, and it's so beautiful.
    You will need to install a few fonts (mainly icon fonts) in order for text and icons to be rendered properly.
 
    Necessary fonts:
-   + **Iosevka**  - [here](https://github.com/be5invis/Iosevka)
+   + **Iosevka**  - [here](https://github.com/ryanoasis/nerd-fonts/)
    + **Icomoon**  - [here](https://www.dropbox.com/s/hrkub2yo9iapljz/icomoon.zip?dl=0)
    + **Material** - [here](https://github.com/google/material-design-icons)
 
@@ -86,21 +91,37 @@ Fyi, I use night colorscheme, and it's so beautiful.
 4. Lastly, log out from your current desktop session and log in into AwesomeWM.
 
 </details>
+
 <br>
 
+<details open>
+<summary><strong>F E A T U R E S</strong></summary>
 
+<b>These are the features included in my AwesomeWM setups!</b>
+
+   + Aesthetic `Dashboard` ngl.
+   + Notification Center
+   + Control Panel
+   + ToDo Reminder
+   + Battery Indicator
+   + PopUp Notifications
+   + Applications Launcher
+   + Custom mouse-friendly `ncmpcpp` UI with album art ofc.
+   + Word Clock Lockscreen with PAM Integration
+   + Some Tooltip Widget
+   + Hardware Monitor
+   + Beautiful `colorscheme` ikr.
+
+</details>
+<br>
+<br>
 
 ## Acknowledgements
 
    - **Special thanks to**
       + [ner0z](https://github.com/ner0z)
+      + [ChocolateBread799](https://github.com/ChocolateBread799)
       + [JavaCafe01](https://github.com/JavaCafe01)
-
-   - **Contributors**
-
-      <a href="https://github.com/rxyhn/AwesomeWM-Dotfiles/graphs/contributors">
-         <img src="assets/contributors.png">
-      </a>
 
 <br>
 <br>
